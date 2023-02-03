@@ -1,0 +1,64 @@
+V "GNAT Lib v10"
+A -mtune=generic
+A -march=x86-64
+A -fcommon
+P SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U nilakantha%b		nilakantha.adb		46f09be9 OO PK
+
+U nilakantha%s		nilakantha.ads		2a3ef858 EE OO PF PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		19700101000001 76789da1 ada%s
+D a-except.ads		19700101000001 a7106115 ada.exceptions%s
+D a-stream.ads		19700101000001 119b8fb3 ada.streams%s
+D a-tags.ads		19700101000001 491b781d ada.tags%s
+D a-unccon.ads		19700101000001 0e9b276f ada.unchecked_conversion%s
+D nilakantha.ads	20210525142344 2a3ef858 nilakantha%s
+D nilakantha.adb	20210525142344 6cce63b1 nilakantha%b
+D system.ads		19700101000001 4635ec04 system%s
+D s-exctab.ads		19700101000001 54135002 system.exception_table%s
+D s-parame.ads		19700101000001 48ec542b system.parameters%s
+D s-secsta.ads		19700101000001 20bbe636 system.secondary_stack%s
+D s-soflin.ads		19700101000001 a7318a92 system.soft_links%s
+D s-stache.ads		19700101000001 a37c21ec system.stack_checking%s
+D s-stalib.ads		19700101000001 09bd3940 system.standard_library%s
+D s-stoele.ads		19700101000001 2dc34a04 system.storage_elements%s
+D s-stoele.adb		19700101000001 ed88f8fb system.storage_elements%b
+D s-stratt.ads		19700101000001 aedef97e system.stream_attributes%s
+D s-traent.ads		19700101000001 005bf670 system.traceback_entries%s
+D s-unstyp.ads		19700101000001 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [iterate nilakantha 3 15 none]
+G c Z s b [getpi nilakantha 4 14 none]
+G c Z s s [nilakanthaseriesDA nilakantha 6 10 none]
+G c Z s s [nilakanthaseriesDF nilakantha 6 10 none]
+G c Z s s [nilakanthaseriesIP nilakantha 6 10 none]
+X 6 nilakantha.ads
+1K9*Nilakantha 6E10 11l5 11e15 7|1b14 17l5 17t15
+2R10*NilakanthaSeries 3p15 3r38 4p14 4r28 6c10 10e15 7|2r37 13r27
+3U15*Iterate 3=24 7|2b15 11l9 11t16
+3r24 Self{2R10} 7|2b23 6r25 7r25 8m9 8r19 9m9 9r20 10m9 10r20
+4V14*GetPi{long_float} 4>21 7|13b14 16l9 16t14
+4r21 Self{2R10} 7|13b20 15r16
+7i9*A{integer} 7|6r30 8m14 8r24
+8i9*S{integer} 7|7r30 9m14 9r25
+9f9*Pi{long_float} 7|10m14 10r25 15r21
+X 7 nilakantha.adb
+3f9 A{long_float} 6m9 10r42 10r47 10r52
+4f9 S{long_float} 7m9 10r30
+
